@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do APP</title>
+
+        <!-- css -->
+         <link rel="stylesheet" href="style.css">
+
+        <!-- icon font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul> <!-- link to part of page that displays when clicked and hides the rest -->
+                    <li><a href="#task-display" id="main-tab">Main</a></li>
+                    <li><a href="#completed-tab" id="completed-link">Completed</a></li>
+                    <li><a href="#notes-tab" id="notes-link">Notes</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="task-display" id="task-display">
+                <h1 id="date">DIA/MES</h1>
+                <h2>My Tasks</h2>
+                <div class="task-list" id="task-list">
+                    <!-- My Tasks Div -->
+                </div>
+                <button class="create-task-btn" id="create-task-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+
+            </section>
+            <section class="new-task-container" id="new-task-container">
+                <h2>Create New Task</h2> 
+                <div class="new-task-title" id="new-task-title">
+                    <label for="task-title">Task Title</label>
+                    <input
+                        type="text"
+                        id="task-title"
+                        name="task-title"
+                        placeholder="What is your task?"
+                        required>
+                </div>
+
+                <div class="new-task-description" id="new-task-description">
+                    <label for="task-description">Task Description</label> 
+                    <textarea
+                        id="task-description"
+                        name="task-description"
+                        placeholder="Describe your task"></textarea>
+                </div>
+                <button class="create-new-task-btn" id="create-new-task-btn">
+                    Create
+                </button>
+
+                <button class="close-new-task-btn" id="close-new-task-btn">
+                    Close
+                </button>
+
+            </section>
+            <section class="completed-tab" id="completed-tab">
+                <h2>Completed Tasks</h2>
+                <div class="completed-task-list" id="completed-task-list">
+                    <!-- completed tasks -->
+                </div>
+            </section>
+            <section class="notes-tab" id="notes-tab">
+                <h2>My Notes</h2>
+                <button class="new-note-btn" id="new-note-btn"> New Note</button> <!-- if preexisting notes when hover display editing icon -->
+                <div class="new-note-container" id="new-note-container">
+                    <h2>Create New Note</h2>
+                    <label for="note-title">Note Title</label>
+                    <input
+                        type="text"
+                        id="note-title"
+                        name="note-title"
+                        placeholder="Title optional">
+
+                    <label for="new-note">New Note</label>
+                    <textarea
+                        id="new-note"
+                        name="new-note"
+                        placeholder="Write your note here"
+                        required></textarea>
+                    <button class="create-note-btn" id="create-note-btn">Create Note</button>
+                </div>
+                <div class="note-list" id="note-list">
+                    <!-- My notes div -->
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="index.js"></script>
+    </body>
+</html>
