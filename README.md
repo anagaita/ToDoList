@@ -1,6 +1,6 @@
 # ToDoList
 This project is a To Do List Application. The App is divided in 3 section (Tasks, Completed Tasks and Notes) and enables the user to create, delete and complete tasks and also create notes.
-Link:
+Link: https://anagaita.github.io/ToDoList/
 
 ## Tech used:
 HTML
